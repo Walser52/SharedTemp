@@ -1,0 +1,49 @@
+&CONTROL
+  calculation = 'vc-relax'
+  etot_conv_thr = 6.0d-05
+  forc_conv_thr = 1.0d-04
+  outdir = './out/'
+  prefix = 'aiida'
+  pseudo_dir = './pseudo/'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+  wf_collect = .true.
+/
+&SYSTEM
+  ibrav = 4
+  celldm(1) = 3.184223
+  celldm(3) = 4.076  ! c/a ratio
+  nat = 3
+  ntyp = 2
+  ecutwfc = 35.0
+  ecutrho = 280.0
+  occupations = 'smearing'
+  smearing = 'cold'
+  degauss = 0.02
+  nosym = .false.
+/
+&ELECTRONS
+  conv_thr = 1.2d-09
+  electron_maxstep = 80
+  mixing_beta = 0.4
+/
+&IONS
+  ion_dynamics = 'bfgs'
+/
+&CELL
+  cell_dynamics = 'bfgs'
+  cell_dofree = '2Dxy'
+/
+ATOMIC_SPECIES
+S      32.065   s_pbesol_v1.4.uspp.F.UPF
+W      183.84   w_pbesol_v1.2.uspp.F.UPF  
+
+ATOMIC_POSITIONS crystal
+W   0.3333330000   0.6666670000   0.2500000000
+S   0.0000000000   0.0000000000   0.6298050000
+S   0.6666670000   0.3333330000   0.1298050000
+
+K_POINTS automatic
+16 16 1 0 0 0
+
