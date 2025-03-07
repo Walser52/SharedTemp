@@ -12,11 +12,13 @@ def read_pwscf_input(file_path):
     """
 
     nml = f90nml.read(file_path)
-    return nml.todict()  # Convert to dictionary
+    return nml  # Convert to dictionary
 
 # Example usage
 file_path = "pwscf.in"
 qe_input_dict = read_pwscf_input(file_path)
 
-# Print as a dictionary
 print(qe_input_dict)
+
+# Print as a dictionary
+#print(qe_input_dict)

@@ -1,0 +1,52 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = '../out/'
+   prefix           = 'aiida'
+   etot_conv_thr    = 7e-05
+   forc_conv_thr    = 0.0001
+   pseudo_dir       = '../pseudo/'
+/
+&SYSTEM
+   a                = 12.6019078721
+   nat              = 0
+   ntyp             = 0
+   ecutwfc          = 40.0
+   ecutrho          = 320.0
+   nosym            = .false.
+   occupations      = 'smearing'
+   degauss          = 0.146997236
+   smearing         = 'cold'
+   space_group      = 221
+   ibrav            = 0
+/
+&ELECTRONS
+   electron_maxstep = 80
+   conv_thr         = 1.4e-09
+   mixing_beta      = 0.4
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+/
+&CELL
+   cell_dynamics    = 'bfgs'
+   press_conv_thr   = 0.05
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+0.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 0.00000000000000
+
+ATOMIC_POSITIONS angstrom
+
