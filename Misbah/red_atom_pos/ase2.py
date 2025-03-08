@@ -13,7 +13,10 @@ def QE_additional_cards_splitter(additional_cards):
   return cards_dict
 
 
-def flatten_dict(d, parent_key='', sep='_'):
+def flatten_dict(d):
+    """
+    Flattens a nested dict by removing parents. 
+    """
     items = []
     for k, v in d.items():
         new_key = f"{k}" if parent_key else k
@@ -24,7 +27,7 @@ def flatten_dict(d, parent_key='', sep='_'):
           pass
 
         if isinstance(v, dict):
-            items.extend(flatten_dict(v, new_key, sep=sep).items())
+            items.extend(flatten_dict(v).items())
         else:
             items.append((new_key, v))
 
