@@ -1,0 +1,9 @@
+##### References for Doyle Fuler Newmann model 
+  
+1. "" A modified Doyle-Fuller-Newman model enables the macroscale physical
+      simulation of dual-ion batteries "" 
+2. "" Observer design for the Doyle–Fuller–Newman Li-ion battery model without
+      electrolyte dynamics ""
+3. ""  Porous Electrode Modeling and its Applications to Li-Ion Batteries""   Review article
+4. ""  Fast Charging of a Lithium-Ion Battery "" 
+5. ""  A composite electrode model for lithium-ion batteries with silicon/graphite negative electrodes""
