@@ -1,0 +1,77 @@
+&CONTROL
+  calculation = 'vc-relax'
+  etot_conv_thr =   3.2000000000d-03
+  forc_conv_thr =   1.0000000000d-04
+  outdir = './out/'
+  prefix = 'LGPS'
+  pseudo_dir = './pseudo/'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+  nstep = 150
+ ! disk_io = 'medium'
+ ! restart_mode = 'restart'
+/
+&SYSTEM
+  degauss =   2.0000000000d-02
+  ecutrho =   3.2000000000d+02
+  ecutwfc =   4.0000000000d+01
+  space_group = 68
+  origin_choice = 2
+  nat = 23
+  A = 36.865010000
+  B = 12.0507000000
+  C = 13.027000000
+  nosym = .false.
+  ntyp = 4
+  occupations = 'smearing'
+  smearing = 'cold'
+/
+&ELECTRONS
+  conv_thr =   6.4000000000d-07
+  electron_maxstep = 80
+  mixing_beta =   7.0000000000d-01
+ ! startingpot="file"
+ ! startingwfc="file"
+/
+&IONS
+ion_dynamics = 'bfgs'
+/
+&CELL
+cell_dynamics = 'bfgs' 
+press_conv_thr= 0.05
+/
+
+ATOMIC_SPECIES
+Ge     72.64 ge_pbe_v1.4.uspp.F.UPF
+Li     6.941 li_pbe_v1.4.uspp.F.UPF
+P      30.973761 P.pbe-n-rrkjus_psl.1.0.0.UPF
+S      32.065 s_pbe_v1.4.uspp.F.UPF
+
+ATOMIC_POSITIONS (crystal_sg)
+Ge  0.41798  0.67079  0.52422
+S   0.35209  0.91487  0.67207
+S   0.54868  0.66803  0.42985
+Ge  0.41798  0.67079  0.52422
+S   0.45132  0.33197  0.57015
+S   0.29498  0.55558  0.21341
+S   0.21158  0.45943  0.49532
+S   0.44442  0.70502  0.71341
+S   0.35065  0.42566  0.64241
+P   0.25000  0.25000  0.25000
+S   0.14935  0.07434  0.64241
+S   0.57434  0.64935  0.14241
+P   0.00052  0.49948  0.25000
+Li  0.91452  0.54251  0.47347
+Li  0.25000  0.25000  0.75000
+Li  0.22654  0.61029  0.15289
+Li  0.75000  0.25000  0.47784
+Li  0.38971  0.77346  0.65289
+Li  0.25000  0.75000  0.02216
+Li  0.16430  0.33570  0.25000
+Li  0.41452  0.04251  0.52653
+Li  0.77346  0.38971  0.84711
+Li  0.41452  0.04251  0.52653
+
+K_POINTS automatic
+2 4 4 0 0 0
