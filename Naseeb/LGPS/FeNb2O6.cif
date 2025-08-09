@@ -1,0 +1,42 @@
+
+#======================================================================
+# CRYSTAL DATA
+#----------------------------------------------------------------------
+data_VESTA_phase_1
+
+_chemical_name_common                  'FeNb2O6'
+_cell_length_a                         14.159000
+_cell_length_b                         5.702000
+_cell_length_c                         5.015600
+_cell_angle_alpha                      90.000000
+_cell_angle_beta                       90.000000
+_cell_angle_gamma                      90.000000
+_cell_volume                           404.932588
+_space_group_name_H-M_alt              'P b c n'
+_space_group_IT_number                 60
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+   '-x, -y, -z'
+   '-x+1/2, -y+1/2, z+1/2'
+   'x+1/2, y+1/2, -z+1/2'
+   '-x, y, -z+1/2'
+   'x, -y, z+1/2'
+   'x+1/2, -y+1/2, -z'
+   '-x+1/2, y+1/2, z'
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_U_iso_or_equiv
+   _atom_site_type_symbol
+   Fe1        1.0     0.000000     0.331000     0.250000    Uiso  ? Fe
+   Nb1        1.0     0.339000     0.319000     0.251000    Uiso  ? Nb
+   O1         1.0     0.096000     0.104000     0.073000    Uiso  ? O
+   O2         1.0     0.419000     0.116000     0.099000    Uiso  ? O
+   O3         1.0     0.756000     0.124000     0.079000    Uiso  ? O
