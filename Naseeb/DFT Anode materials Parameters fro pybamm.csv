@@ -1,0 +1,9 @@
+Parameters Needed for Anode Material Simulation in Pybamm ,,,,,,,,,
+Material,Ion,Capacity (mAh/g),Diffusion min(eV),Li Diffusin cofficient (cm^2/s),Average OCV(V),OCV range Li(V),Paper link,Number of Li atoms (Stoichometery),Voltage (V) (OCV)
+Hop-graphene,Li,1338,0.7,1.78E-11,0.42,"0.09, 1.39",https://doi.org/10.1016/j.apsusc.2025.163737,"[3,4,7,8,11,12,15,19,20,23]","[1.4, 0.7, 0.7, 0.3, 0.3, 0.2, 0.2, 0.1, 0.1, 0.05, 0.05]"
+,,,,,,,,,
+WS2-graphene,Li,588.16,0.27,1.50E-10,0.75,"0.69 ,0.85",https://doi.org/10.1021/acsomega.3c06559,"[1,2,3,4,5,6]","[0.85, 0.82, 0.74, 0.71, 0.7, 0.69]"
+,,,,,,,,,
+VS2-graphene,Li,771,0.03,1.10E-06,0.65,"0.21 , 1.30",https://doi.org/10.1039/D1CP02243A,,
+,,,,,,,,,
+PG/P-BN2,Li,1054.35,0.02,1.00E-06,0.93,"0.5 , 1.2 ",https://doi.org/10.1016/j.jallcom.2021.163538,,
